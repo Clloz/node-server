@@ -1,0 +1,111 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+}  
+
+ul {  
+  list-style: none;  
+}  
+
+html,  
+body,  
+main {  
+  height: 100%;  
+}  
+
+body {  
+  background: linear-gradient(  
+      to right top,  
+      rgba(6, 6, 6, 0.8),  
+      rgba(57, 58, 60, 0.8)  
+    ),  
+    url("./img/dota2_bg.jpg") center center no-repeat;  
+}  
+
+header {  
+  position: fixed;  
+  width: 100%;  
+  height: 70px;  
+  line-height: 70px;  
+  font-size: 24px;  
+  color: #eee;  
+  text-align: center;  
+  background: rgba(0, 0, 0, 0.3);  
+}  
+
+main {  
+  width: 788px;  
+  margin: 0 auto;  
+  padding-top: 100px;  
+}  
+
+.hero-list {  
+  font-size: 0;  
+  margin-left: -10px;  
+}  
+
+.hero-list li {  
+  position: relative;  
+  display: inline-block;  
+  margin-left: 10px;  
+  margin-top: 10px;  
+  cursor: pointer;  
+}  
+
+.hero-list li.up {  
+  transform: translateY(-72px);  
+  transition: all 1s;  
+}  
+
+.hero-list li.down {  
+    transform: translateY(0px);  
+    transition: all 1s;  
+  }  
+
+.hero-list li .back {  
+  position: absolute;  
+  height: 50%;  
+  width: 100%;  
+  top: 72px;  
+  right: 0;  
+  bottom: 0;  
+  left: 0;
+  text-align: center;  
+  line-height: 72px;
+  font-size: 24px;  
+  color: white;  
+  border-radius: 10px;  
+  background: rgba(0, 0, 0, 0.7);  
+  display: none;  
+}  
+
+.hero-list li.up .back {  
+    display: block;
+    transform: translateY(72px);  
+    transition: all 1s;  
+}  
+
+.hero-list li.down .back {  
+    display: none; 
+    transform: translateY(0px);  
+    transition: all 1s;   
+}  
+
+
+.hero-list li:after {  
+  content: "";  
+  position: absolute;  
+  height: 100%;  
+  width: 100%;  
+  top: 0;  
+  right: 0;  
+  bottom: 0;  
+  left: 0;  
+  border-radius: 10px;  
+  background: rgba(0, 0, 0, 0.2);  
+}  
+
+.hero-list li img {  
+  border-radius: 10px;  
+}  
