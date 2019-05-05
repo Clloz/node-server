@@ -21,6 +21,7 @@ body {
       rgba(57, 58, 60, 0.8)  
     ),  
     url("./img/dota2_bg.jpg") center center no-repeat;  
+  background-size: cover;
 }  
 
 header {  
